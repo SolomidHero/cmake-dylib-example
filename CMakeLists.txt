@@ -7,6 +7,8 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
 
 execute_process(COMMAND python3 ${PROJECT_SOURCE_DIR}/A/preparing.py)
 
+link_directories(${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
+
 include_directories(${PROJECT_SOURCE_DIR})
 add_subdirectory(A)
 add_subdirectory(B)
