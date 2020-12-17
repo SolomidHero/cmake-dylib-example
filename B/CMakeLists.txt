@@ -4,4 +4,3 @@ project(B)
 
 set(SOURCE_EXE lib.cpp)
 add_library(lib_B SHARED lib.h lib.cpp)
-# target_include_directories(lib_B PUBLIC .)
